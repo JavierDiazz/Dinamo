@@ -1,0 +1,29 @@
+name: Automatizar Push
+
+on:
+  push:
+    branches:
+      - main 
+
+jobs:
+  push_changes:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Add changes
+      run: |
+        git config --global user.email "javier.posso@correounivalle.edu.co"
+        git config --global user.name "Javier"
+        git add .
+
+    - name: Commit changes
+      run: |
+        git commit -m "Automated commit"
+      
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}

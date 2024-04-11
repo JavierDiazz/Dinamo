@@ -1,0 +1,45 @@
+/* Estilo de los botones*/
+.btn-style-1 {
+    font-size: 1.2rem;
+    color: white;
+    padding: 0.2rem, 1rem;
+    transition: ease 0.5s;
+
+
+}
+.btn-style-1:hover {
+    color: white;
+    background-color: #774ddb;
+    padding: 0.2rem, 1rem;
+    transition: ease 0.5s;
+
+    
+}
+/* Estilo de centrado y ubicación de los botones*/
+.estilo-1 {
+    flex-direction: column;
+    justify-content: space-around;
+    display: flex;
+}
+
+/* Linea de bordado inferior bajo el titulo*/
+.estilo-titulo {
+    border-bottom: 5px solid #774ddb;
+    font-size: 1rem;
+    background-color: #19191f;
+}
+
+/* Estilo del titulo Dinamo*/
+.estilo-dinamo {
+    font-size: 6rem;
+    font-family: 'Roboto';
+}
+
+.estilo-dinamo-2 {
+    font-size: 4rem;
+    font-family: 'Roboto';
+    color: white;
+}
+.bg-landing{
+    background-color: #19191f;
+}
