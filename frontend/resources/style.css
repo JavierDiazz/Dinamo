@@ -43,3 +43,13 @@
 .bg-landing{
     background-color: #19191f;
 }
+
+.centrar{
+    width: 100vw;
+    height: 50vh;
+    margin: 0;
+    padding: 0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
