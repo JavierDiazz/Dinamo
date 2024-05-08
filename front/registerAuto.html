@@ -27,7 +27,7 @@
     <div class="centrar row text-center m-o p-0 bg-landing">
         <div class="text-white">
             <h2 class="mb-5">Registrar Vehículo</h2>
-            <form id="register-cliente" method="POST" action="http://localhost:8000/carapp/autos/">
+            <form id="register-auto" method="POST" action="http://localhost:8000/carapp/autos/">
                 <div class="mb-4">
                     <label for="id">Marca:</label>
                     <input type="text" id="id" name="idAuto" required>
@@ -74,7 +74,7 @@
         <!-- Control de creacion de usuarios -->
         <script>
             $(document).ready(function() {
-                $('#register-cliente').submit(function(event) {
+                $('#register-auto').submit(function(event) {
                     event.preventDefault(); // Prevenir el envío normal del formulario
         
                     // Serializar los datos del formulario
